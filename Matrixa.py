@@ -21,16 +21,15 @@ print("Введите размер матрицы")
 str_matrix=int(input())
 sum=0
 matrix=[]
+
 for i in range(str_matrix):
     row=[]
     for j in range(str_matrix):
         row.append(random.randint(1,10))
     matrix.append(row)
+    
+print(matrix)
 
 for i in range(len(matrix)):
-    for j in range(len(matrix[i])):
-        matrix[i][j]=random.randint(1,10)
-        print(matrix[i][j], end=" ")
-    print()
     sum+=matrix[i][i]
 print("след матрицы=", sum)
