@@ -24,7 +24,7 @@ s="Программа не должна создавать дополнител�
 def isDelimetr(ch):
     return ch == ' ' or ch == '\t' or ch == '\n' or   ch == '\r' or ch == ',' or ch == '.' or ch == '!' or ch == '?' or ch == ':' or ch == ';'or ch == '('or ch == ')'or ch == '"'
 def Wordcount(s):
-    if s is None and not s:
+    if s is None:
         return 0
     count=0
     isWord=False
@@ -39,7 +39,7 @@ def Wordcount(s):
                 isWord=True
     return count
 def Lettercount(s):
-    if s is None and not s:
+    if s is None:
         return 0
     count=0
     for i in s:
